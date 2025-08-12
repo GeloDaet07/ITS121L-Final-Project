@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="ITS121L_Proto2.css">
+        <link rel="icon" type="image/x-icon" href="Logo-favicon.png">
+        <title>Pekamura Diner</title>
+        <style>
+            @font-face {
+                font-family: Custom1;
+                src: url(Insanibu.ttf);
+            }
+
+            .Section-Header{
+                font-family: Custom1, San-serif;
+                font-size: clamp(60px, 65px, 70px);
+                color: #ffc107;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="Logo_Test.png" alt="Logo.png" height="70px" class="logo-settings"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Gallery_Page.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ITS121L_Proto2_Menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ITS121L_Proto2_AboutUs.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <img src="Promo Banner.jpg" usemap="#image-map" width="100%">
+        <map name="image-map">
+            <area target="_blank" alt="Promo" title="Promo" href="https://www.facebook.com/pekamuradinerV2.0/posts/pfbid0124bWArs66JRsVW5pT6n4yEDPt58k5Y8fCe6evUio1dZyoJ8cMkEkXEuDxPpgurBl" coords="709,41,708,557,1313,562,1293,534,1287,496,1293,453,1332,407,1399,386,1400,39" shape="poly">
+        </map>
+        <section class="Featured_Menu_Settings mt-5">
+            <section class="container">
+                <h1 class="mb-4 Section-Header">Today's Featured Menu</h1>
+                <div class="row flex-lg-row flex-column justify-content-center gap-3">
+                    <div class="col Featured_Food_Section">
+                        <img src="Kare_Kare_A.jpg" class="img-fluid border-0" alt="Shop Image">
+                        <div class="overlay-text">
+                            <h1>Crispy Pork Kare-Kare</h1>
+                            <p><strong>PRICE:</strong> PHP389</p>
+                        </div>
+                    </div>
+                    <div class="col Featured_Food_Section">
+                        <img src="Chichken_Alfredo_A.jpg" class="img-fluid border-0" alt="Shop Image">
+                        <div class="overlay-text">
+                            <h1>Chicken Alfredo</h1>
+                            <p><strong>PRICE:</strong> PHP319</p>
+                        </div>
+                    </div>
+                    <div class="col Featured_Food_Section">
+                        <img src="Ebi_Tempura_A.jpg" class="img-fluid border-0" alt="Shop Image">
+                        <div class="overlay-text">
+                            <h1>Ebi Tempura</h1>
+                            <p>PRICE: PHP309</p>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+        </section>
+        <section class="gallery">
+            <section class="container mt-5 mb-5">
+                <h1 class="Section-Header">Pictures of our customers satisfied!</h1>
+                <div id="Gallery_Carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded-4">
+                        
+                        <div class="carousel-item active">
+                            <img src="Gallery_Photo_1.jpg" class="d-block w-100" alt="First Slide">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="Gallery_Photo_2.jpg" class="d-block w-100" alt="Second Slide">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="Gallery_Photo_3.jpg" class="d-block w-100" alt="Third Slide">
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="Gallery_Photo_4.jpg" class="d-block w-100" alt="Third Slide">
+                        </div>
+                    </div>
+                    
+                    <a class="carousel-control-prev" href="#Gallery_Carousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#Gallery_Carousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+                <br><br>
+            </section>
+        </section>
+        <div class="container subscription-area rounded-4">
+            <div class="row">
+                <div class="col-lg-6 p-4">
+                    <img src="Milktea.jpg" alt="Test" width="100%" height="auto" class="rounded-4">
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-center p-4">
+                    <h1 class="mb-4">Subscribe to Our Newsletter</h1>
+                    <p>
+                        Sign up for our newsletter to receive updates, special offers, and more!
+                    </p>
+                    <form action="#" method="post" class="mt-4">
+                        <div class="mb-3">
+                            <label for="email" class="form-label"><b style="font-weight: bold;">Email address:</b></label>
+                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+                        </div>
+                        <button type="submit" class="btn rounded-4">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+        <footer class="pt-5 pb-5">
+            <div class="container">
+                <div class="row footer-text-settings mb-3">
+                    <div class="col-sm-12 col-md-12 col-lg-4 mb-5">
+                        <h1>About Us:</h1>
+                        <p class="About-us-text-footer">At Pekamura Diner, we are passionate about creating memorable dining experiences for our guests. From our carefully crafted menu to our warm and inviting atmosphere, we strive to make every visit special. Our journey began with a vision to provide not just a meal, but a culinary journey that tantalizes your taste buds and leaves you wanting more. Explore our diverse menu, carefully curated by our talented chefs, offering a fusion of flavors that reflect our commitment to quality and innovation.</p>
+                        <h1>Follow Us:</h1>
+                        <a href="https://www.facebook.com/pekamuradinerV2.0" class="me-3" target="_blank">
+                            <i class="fa-brands fa-square-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pekamuradiner/" class="me-3" target="_blank">
+                            <i class="fa-brands fa-square-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <h1>Quick Links:</h1>
+                        <ul class="quick-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Gallery_Page.html">Gallery</a></li>
+                            <li><a href="ITS121L_Proto2_Menu.html">Menu</a></li>
+                            <li><a href="ITS121L_Proto2_AboutUs.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <h1>Contact Us:</h1>
+                        <ul>
+                            <li><p><strong>Email Address:</strong> pekamuradiner@gmail.com</p></li>
+                            <li><p><strong>Phone Number:</strong> +63 977 821 2118</p></li>
+                            <li><p><strong>Address:</strong> SG David Boulevard (few blocks away from Loyola) Across Chong's Chicken Inasal Brgy. Binauganan, Tarlac City, Tarlac, Philippines, 2300</p></li>
+                            <li><p><strong>Opening Hours:</strong> 9:00 AM - 9:00 PM</p></li>
+                        </ul>
+                        <h1>Also Check Us Here:</h1>
+                        <a href="https://www.foodpanda.ph/restaurant/dpww/pekamura-diner-binauganan" target="_blank">
+                            <button type="button" class="food-button-1">Foodpanda</button>
+                        </a>
+                        <a href="https://food.grab.com/ph/en/restaurant/pekamura-diner-getha-road-binauganan-delivery/2-C3XER6VALJ6JRN?sourceID=20240127_175903_9495A9BCCB45478DB78CC23C55296876_MEXMPS" target="_blank">
+                            <button type="button" class="food-button-2">Grab</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright-text text-center mt-5 mb-1">&copy; 2024 Pekamura Diner. All rights reserved.</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
